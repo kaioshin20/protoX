@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
+    <link rel="stylesheet" href="src/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
@@ -29,9 +30,6 @@
         }
         #details{
             list-style: none;
-        }
-        .row{
-            margin: 0 auto;
         }
         #contributions{
             list-style: none;
@@ -68,7 +66,7 @@
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                            <a href="#about" class="nav-link">Back</a>
+                            <a href="javascript:history.back()" class="nav-link">Back</a>
                         </li>
                 </ul>
             </div>
@@ -81,15 +79,16 @@
                 <div class="card">
                     <div class="card-body">
                            
-                                    <img class="dp shadow" src="https://i.pinimg.com/originals/87/df/84/87df84b0f8294e7e29391e70f3bd3ae3.jpg" alt="dp">
+                                    <img class="dp shadow animated pulse" src="https://i.pinimg.com/originals/48/4d/82/484d829c4bf5b8103e1294e81a5413e8.png" alt="dp">
                                     <hr>
                                     <ul id="details">
-                                        <li>Name: Dean Winchester</li>
-                                        <li>E-mail: dean@gmail.com</li>
-                                        <li>Phone: 2256987425</li>
-                                        <li>Gender: Male</li>
+                                        <li><span class="font-weight-normal">Name:</span> Dean Winchester</li>
+                                        <li><span class="font-weight-normal">E-mail:</span> dean@gmail.com</li>
+                                        <li><span class="font-weight-normal">Phone:</span> 2256987425</li>
+                                        <li><span class="font-weight-normal">Gender:</span> Male</li>
+                                        <br>
+                                        <li><button class="btn btn-info">Edit details</button></li>
                                     </ul>
-                                    <button class="btn btn-info">Edit details</button>
                              
                         </div>
                         </div>
@@ -156,7 +155,7 @@
                                                         </li>
                                                     
                                                     </td>
-                                                    <td>✔</td>
+                                                    <td class="animated tada">✔</td>
                                                         
                                           </tr>
                                           <tr>
@@ -169,7 +168,7 @@
                                                             </li>
                                                         
                                                         </td>
-                                                        <td>✔</td>
+                                                        <td class="animated tada">✔</td>
                                                             
                                               </tr>
                                               <tr>
@@ -182,7 +181,7 @@
                                                                 </li>
                                                             
                                                             </td>
-                                                            <td>✔</td>
+                                                            <td class="animated tada">✔</td>
                                                                 
                                                   </tr>
                                                   <tr>
@@ -195,7 +194,7 @@
                                                                     </li>
                                                                 
                                                                 </td>
-                                                                <td>✔</td>
+                                                                <td class="animated tada">✔</td>
                                                                     
                                                       </tr>
                                                       <tr>
@@ -208,7 +207,7 @@
                                                                         </li>
                                                                     
                                                                     </td>
-                                                                    <td>✔</td>
+                                                                    <td class="animated tada">✔</td>
                                                                         
                                                           </tr>
                                                           <tr>
@@ -221,7 +220,7 @@
                                                                             </li>
                                                                         
                                                                         </td>
-                                                                        <td>✔</td>
+                                                                        <td class="animated tada">✔</td>
                                                                             
                                                               </tr>
                                                               <tr>
@@ -234,7 +233,7 @@
                                                                                 </li>
                                                                             
                                                                             </td>
-                                                                            <td>✔</td>
+                                                                            <td class="animated tada">✔</td>
                                                                                 
                                                                   </tr>
                                                                   <tr>
@@ -247,7 +246,7 @@
                                                                                     </li>
                                                                                 
                                                                                 </td>
-                                                                                <td>✔</td>
+                                                                                <td class="animated tada">✔</td>
                                                                                     
                                                                       </tr>
                                                                       <tr>
@@ -260,7 +259,7 @@
                                                                                         </li>
                                                                                     
                                                                                     </td>
-                                                                                    <td>✔</td>
+                                                                                    <td class="animated tada">✔</td>
                                                                                         
                                                                           </tr>
                                          
@@ -273,14 +272,6 @@
                             </div>
                 </div>
     </div>
-
-
-
-
-    <li class="nav-item">
-            <a href="#" class="nav-link"  data-toggle="modal"
-            data-target="#contactModal" >Enter New Employee</a>
-        </li>
 
 
 
@@ -316,7 +307,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 col-sm-12 ml-auto">
-                    <p class="lead">Copyright&copy; 2019</p>
+                    <p class="lead">Copyright@The Gentleman&copy; 2019</p>
                 </div>
             </div>
         </div>
