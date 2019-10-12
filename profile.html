@@ -7,41 +7,118 @@
     <title>Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        .block{
-            border: 1px solid black;
+        .left{
             padding: 50px;
-            back
+            margin: 30px;
+            box-shadow: 10px 10px 10px gray;
+            border: 0.5px solid rgb(202, 202, 202);
+            background-color: white;
+        }
+        .right{
+            padding: 50px;
+            margin: 30px;
         }
         body{
             margin: 50px;
+            background: #8e9eab;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .dp{
+            border-radius: 500px;
+            height: 400px;
+        }
+        #details{
+            list-style: none;
+        }
+        .row{
+            margin: 0 auto;
+        }
+        #contributions{
+            list-style: none;
+            font-size: 2em;
+        }
+        h1{
+            text-transform: capitalize;
         }
     </style>
+    <title>Redeem Rewards</title>
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-    <!-- navbar -->
-    <div class="row">
-        <div class="block" class="col-6">
-            <img src="https://i.pinimg.com/originals/87/df/84/87df84b0f8294e7e29391e70f3bd3ae3.jpg" alt="dp" height="500px">
-            <ul>
-                <li>Name</li>
-                <li>id</li>
-                <li>id</li>
-                <li>id</li>
-                <li>id</li>
-            </ul>
-            <button>Edit details</button>
+
+<body id="home" >
+
+
+    <nav class="nav navbar navbar-expand-md navbar-light fixed-top py-4">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/mlogo.png" alt="" width="50" height="50">
+                <h3 class="d-inline align-middle">ProtoX</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="#about" class="nav-link">Back</a>
+                        </li>
+                </ul>
+            </div>
         </div>
-        <div class="block" class="col-6">
-            <h1>Tasks Completed</h1>
-            <ul>
-                <li>Tasks Completed</li>
-                <li>Tasks Completed</li>
-                <li>Tasks Completed</li>
-                <li>Tasks Completed</li>
-                <li>Tasks Completed</li>
-                <li>Tasks Completed</li>
+    </nav>
+    
+
+
+    <div class="row justify-content-center">
+        <div class="left" class="col-6">
+            <img class="dp shadow" src="https://i.pinimg.com/originals/87/df/84/87df84b0f8294e7e29391e70f3bd3ae3.jpg" alt="dp">
+            <hr>
+            <ul id="details">
+                <li>Name: Dean Winchester</li>
+                <li>E-mail: dean@gmail.com</li>
+                <li>Phone: 2256987425</li>
+                <li>Gender: Male</li>
+            </ul>
+            <button class="btn btn-info">Edit details</button>
+        </div>
+        <div class="right" class="col-6">
+            <h1>Contributions to the community:</h1>
+            <br>
+            <ul id="contributions">
+                <li>Tasks Completed ✅</li>
+                <li>Tasks Completed ✅</li>
+                <li>Tasks Completed ✅</li>
+                <li>Tasks Completed ✅</li>
+                <li>Tasks Completed ✅</li>
+                <li>Tasks Completed ✅</li>
             </ul>
         </div>
     </div>
+
+
+    
+    <footer id="main-footer" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-sm-12 ml-auto">
+                    <p class="lead">Copyright&copy; 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/jquery.min.js"></script>
+      <script src="src/js/popper.min.js"></script>
+      <script src="src/js/bootstrap.min.js"></script>
+      <script src="src/js/navbar-fixed.js"></script>
 </body>
 </html>
+
