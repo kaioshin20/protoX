@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LoopLAB theme</title>
+  <title>Home</title>
   <link rel="stylesheet" href="src/css/font-awesome.min.css">
   <link rel="stylesheet" href="src/css/animate.css">
   <link rel="stylesheet" href="src/css/bootstrap.css">
   <link rel="stylesheet" href="src/css/style.css">
+  <style>
+      #photo:hover{
+        transform: scale(1.1);
+      }
+  </style>
 </head>
 <body id="home" >
 
 
     <nav class="nav navbar navbar-expand-md navbar-light fixed-top py-4">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="img/mlogo.png" alt="" width="50" height="50">
+            <a href="index.html" class="navbar-brand animated bounce">
                 <h3 class="d-inline align-middle">Proto X</h3>
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -36,6 +40,9 @@
                         <li class="nav-item">
                                 <a href="tasks.html" class="nav-link">Tasks</a>
                             </li>
+                            <li class="nav-item">
+                                    <a href="redeem.html" class="nav-link">Redeem rewards</a>
+                                </li>
                 </ul>
             </div>
         </div>
@@ -48,10 +55,10 @@
 <section id="explore-section" class="bg-light text-muted py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 animated bounceInLeft">
                     <img src="src/img/adult-business-meeting-business-people-1438072.jpg" alt="" class="img-fluid mb-3 rounded-circle">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 animated bounceInRight">
                     <h3>Explore & Connect</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laboriosam debitis nobis voluptates voluptatum. Sed cum quod reprehenderit magnam quos! Sapiente eos hic odio at laudantium aperiam distinctio blanditiis minima?</p>
                     <h1 class="display-4">Build ,<strong>Contribute</strong> and gain <strong>Knowledge</strong> and <strong>profits</strong></h1>
@@ -105,7 +112,7 @@
                     </div>
                     
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 animated tada">
                     <img src="src/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="" class="img-fluid mb-3 rounded-circle">
                     </div>
             </div>
@@ -135,7 +142,7 @@
             <div class="container">
                 <div class="row">
                         <div class="col-md-6">
-                                <img src="src/img/perry-grone-lbLgFFlADrY-unsplash.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                                <img id="photo" src="src/img/perry-grone-lbLgFFlADrY-unsplash.jpg" alt="" class="img-fluid mb-3 rounded-circle">
                                 </div>
                     <div class="col-md-6">
                         <h3>Share what you create</h3>
