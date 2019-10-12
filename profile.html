@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .left{
@@ -14,18 +15,16 @@
             border: 0.5px solid rgb(202, 202, 202);
             background-color: white;
         }
+        .nav-item{
+            list-style:none;
+        }
         .right{
             padding: 50px;
             margin: 30px;
         }
-        body{
-            margin: 50px;
-            background: #8e9eab;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
+    
         .dp{
-            border-radius: 500px;
+            border-radius: 50%;
             height: 400px;
         }
         #details{
@@ -36,7 +35,7 @@
         }
         #contributions{
             list-style: none;
-            font-size: 2em;
+           
         }
         h1{
             text-transform: capitalize;
@@ -77,33 +76,240 @@
     </nav>
     
 
-
-    <div class="row justify-content-center">
-        <div class="left" class="col-6">
-            <img class="dp shadow" src="https://i.pinimg.com/originals/87/df/84/87df84b0f8294e7e29391e70f3bd3ae3.jpg" alt="dp">
-            <hr>
-            <ul id="details">
-                <li>Name: Dean Winchester</li>
-                <li>E-mail: dean@gmail.com</li>
-                <li>Phone: 2256987425</li>
-                <li>Gender: Male</li>
-            </ul>
-            <button class="btn btn-info">Edit details</button>
-        </div>
-        <div class="right" class="col-6">
-            <h1>Contributions to the community:</h1>
-            <br>
-            <ul id="contributions">
-                <li>Tasks Completed ✅</li>
-                <li>Tasks Completed ✅</li>
-                <li>Tasks Completed ✅</li>
-                <li>Tasks Completed ✅</li>
-                <li>Tasks Completed ✅</li>
-                <li>Tasks Completed ✅</li>
-            </ul>
-        </div>
+    <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                           
+                                    <img class="dp shadow" src="https://i.pinimg.com/originals/87/df/84/87df84b0f8294e7e29391e70f3bd3ae3.jpg" alt="dp">
+                                    <hr>
+                                    <ul id="details">
+                                        <li>Name: Dean Winchester</li>
+                                        <li>E-mail: dean@gmail.com</li>
+                                        <li>Phone: 2256987425</li>
+                                        <li>Gender: Male</li>
+                                    </ul>
+                                    <button class="btn btn-info">Edit details</button>
+                             
+                        </div>
+                        </div>
+            </div>
+            <div class="col-lg-8 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                               
+                                <div class="info-header mb-5">
+                                        <h1 style="text-align: center;" class="text-primary pb-3">
+                                           My Progress
+                                        </h1>
+                                        <p style="text-align: center;" class="lead pb-3">
+                                               My Successful contribution  
+                                                </p>
+                                    </div>
+                                <br>
+                                <!-- <ul id="contributions">
+                                        <li class="nav-item">
+                                                <a href="#" class="nav-link"  data-toggle="modal"
+                                                data-target="#contactModal" >Enter New Employee</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a href="#" class="nav-link"  data-toggle="modal"
+                                                    data-target="#contactModal" >Enter New Employee</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a href="#" class="nav-link"  data-toggle="modal"
+                                                        data-target="#contactModal" >Enter New Employee</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                            <a href="#" class="nav-link"  data-toggle="modal"
+                                                            data-target="#contactModal" >Enter New Employee</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a href="#" class="nav-link"  data-toggle="modal"
+                                                                data-target="#contactModal" >Enter New Employee</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                    <a href="#" class="nav-link"  data-toggle="modal"
+                                                                    data-target="#contactModal" >Enter New Employee</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a href="#" class="nav-link"  data-toggle="modal"
+                                                                        data-target="#contactModal" >Enter New Employee</a>
+                                                                    </li>
+                                </ul> -->
+                                <table class="table">
+                                        <!-- <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">My Contributions</th>
+                                            
+                                          </tr>
+                                        </thead> -->
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                    <li class="nav-item">
+                                                            <a href="#" class="nav-link"  data-toggle="modal"
+                                                            data-target="#contactModal" >Created the home page </a>
+                                                            
+                                                        </li>
+                                                    
+                                                    </td>
+                                                    <td>✔</td>
+                                                        
+                                          </tr>
+                                          <tr>
+                                                <th scope="row">2</th>
+                                                <td>
+                                                        <li class="nav-item">
+                                                                <a href="#" class="nav-link"  data-toggle="modal"
+                                                                data-target="#contactModal" >Test the android beta version  </a>
+                                                                
+                                                            </li>
+                                                        
+                                                        </td>
+                                                        <td>✔</td>
+                                                            
+                                              </tr>
+                                              <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                            <li class="nav-item">
+                                                                    <a href="#" class="nav-link"  data-toggle="modal"
+                                                                    data-target="#contactModal" >Bug fixing in Winchester</a>
+                                                                    
+                                                                </li>
+                                                            
+                                                            </td>
+                                                            <td>✔</td>
+                                                                
+                                                  </tr>
+                                                  <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>
+                                                                <li class="nav-item">
+                                                                        <a href="#" class="nav-link"  data-toggle="modal"
+                                                                        data-target="#contactModal" >Kilingon monster animation</a>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                </td>
+                                                                <td>✔</td>
+                                                                    
+                                                      </tr>
+                                                      <tr>
+                                                            <th scope="row">5</th>
+                                                            <td>
+                                                                    <li class="nav-item">
+                                                                            <a href="#" class="nav-link"  data-toggle="modal"
+                                                                            data-target="#contactModal" >heath care system navigation</a>
+                                                                            
+                                                                        </li>
+                                                                    
+                                                                    </td>
+                                                                    <td>✔</td>
+                                                                        
+                                                          </tr>
+                                                          <tr>
+                                                                <th scope="row">6</th>
+                                                                <td>
+                                                                        <li class="nav-item">
+                                                                                <a href="#" class="nav-link"  data-toggle="modal"
+                                                                                data-target="#contactModal" >Fresh himalaya</a>
+                                                                                
+                                                                            </li>
+                                                                        
+                                                                        </td>
+                                                                        <td>✔</td>
+                                                                            
+                                                              </tr>
+                                                              <tr>
+                                                                    <th scope="row">7</th>
+                                                                    <td>
+                                                                            <li class="nav-item">
+                                                                                    <a href="#" class="nav-link"  data-toggle="modal"
+                                                                                    data-target="#contactModal" >MHRD bug fix</a>
+                                                                                    
+                                                                                </li>
+                                                                            
+                                                                            </td>
+                                                                            <td>✔</td>
+                                                                                
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <th scope="row">8</th>
+                                                                        <td>
+                                                                                <li class="nav-item">
+                                                                                        <a href="#" class="nav-link"  data-toggle="modal"
+                                                                                        data-target="#contactModal" >android pology</a>
+                                                                                        
+                                                                                    </li>
+                                                                                
+                                                                                </td>
+                                                                                <td>✔</td>
+                                                                                    
+                                                                      </tr>
+                                                                      <tr>
+                                                                            <th scope="row">9</th>
+                                                                            <td>
+                                                                                    <li class="nav-item">
+                                                                                            <a href="#" class="nav-link"  data-toggle="modal"
+                                                                                            data-target="#contactModal" >Enter bug style </a>
+                                                                                            
+                                                                                        </li>
+                                                                                    
+                                                                                    </td>
+                                                                                    <td>✔</td>
+                                                                                        
+                                                                          </tr>
+                                         
+                                         
+                                         
+                                                                       
+                                        </tbody>
+                                      </table>
+                            </div>
+                            </div>
+                </div>
     </div>
 
+
+
+
+    <li class="nav-item">
+            <a href="#" class="nav-link"  data-toggle="modal"
+            data-target="#contactModal" >Enter New Employee</a>
+        </li>
+
+
+
+
+
+
+        
+<div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">Description</h5>
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia numquam incidunt deserunt quasi totam illo id. Tempore sed inventore numquam animi, ipsum eaque cum, maxime a nostrum distinctio id.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia numquam incidunt deserunt quasi totam illo id. Tempore sed inventore numquam animi, ipsum eaque cum, maxime a nostrum distinctio id.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia numquam incidunt deserunt quasi totam illo id. Tempore sed inventore numquam animi, ipsum eaque cum, maxime a nostrum distinctio id.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia numquam incidunt deserunt quasi totam illo id. Tempore sed inventore numquam animi, ipsum eaque cum, maxime a nostrum distinctio id.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia numquam incidunt deserunt quasi totam illo id. Tempore sed inventore numquam animi, ipsum eaque cum, maxime a nostrum distinctio id.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia numquam incidunt deserunt quasi totam illo id. Tempore sed inventore numquam animi, ipsum eaque cum, maxime a nostrum distinctio id.
+
+                </div>
+              
+            </div>
+        </div>
+      </div>
+           
+      
 
     
     <footer id="main-footer" class="py-5 bg-primary text-white">
